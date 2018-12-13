@@ -4,13 +4,26 @@
 	<meta charset="utf-8">
 	<title>Breakout</title>
 	<style type="text/css">
-		* { padding: 0; margin 0; }
-		canvas {background: #eee; display: block; margin 0 auto}
+		* {padding: 0; margin 0; }
+		canvas {
+			background: #eee; 
+			display: block; 
+			margin:0 auto;
+			padding-left: 0;
+    		padding-right: 0;
+    		margin-left: auto;
+    		margin-right: auto;
+    		display: block;
+    		
+		}
 	</style>
 </head>
 <body>
-
-	<canvas id="myCanvas" width="480" height="320"> </canvas>
+	<img id="paddleImg" src="bilder/paddleSVG.svg" hidden>
+	<img id="brickImg" src="bilder/brick.svg" hidden>
+	<img id="ballImg" src="bilder/ball.svg" hidden>
+	<img id="bgImg" src="bilder/bg.svg" hidden>
+	<canvas id="myCanvas" width="960" height="640"> </canvas>
 
 
 <script src="breakout.js"></script>
